@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.box1{
+				width: 200px;
+				height: 200px;
+				background-color: aqua;
+				/* 脱离文档流向左浮动 */
+				float: left;
+			}
+			
+			.container{
+				width: 500px;
+				height: 500px;
+				background-color: red;
+			}
+			
+			img{
+				width: 300px;
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>浮动以后元素脱离文档流<br />
+		浮动只有左右浮动，没有上下浮动</h1>
+		
+		<p>向左浮动</p>
+		<div class="box1"></div>
+		<div class="container"></div>
+		
+		<p>向右浮动</p>
+		<div>
+			<img src="../../HTML/3.图片/image1.jpg" alt="" />
+			<img src="../../HTML/3.图片/image1.jpg" alt="" />
+		</div>
+	</body>
+</html>

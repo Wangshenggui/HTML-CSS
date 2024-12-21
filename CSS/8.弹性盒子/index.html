@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.container{
+				width: 500px;
+				height: 500px;
+				background-color: aquamarine;
+				/* 设置后元素默认水平排列 */
+				display: flex;
+				/* row>>>默认,左对齐
+				row-reverse>>>反转横向,右对齐,从后往前
+				column>>>纵向排列
+				column-reverse>>>反转纵向排列,从下网上 */
+				flex-direction: row;
+				/* 垂直摆放位置 */
+				justify-content: flex-start;
+				justify-content: flex-end;
+				justify-content: center;
+				/* 水平摆放位置 */
+				align-items: start;
+				align-items: flex-end;
+				align-items: center;
+			}
+			
+			.box1{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				/* 占比权重 */
+				flex: 1;
+			}
+			
+			.box2{
+				width: 100px;
+				height: 100px;
+				background-color: green;
+				flex: 1;
+			}
+			
+			.box3{
+				width: 100px;
+				height: 100px;
+				background-color: blue;
+				flex: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box1"></div>
+			<div class="box2"></div>
+			<div class="box3"></div>
+		</div>
+	</body>
+</html>
