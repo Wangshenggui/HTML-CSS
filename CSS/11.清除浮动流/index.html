@@ -4,10 +4,60 @@
 		<meta charset="utf-8">
 		<title></title>
 		<style>
+			.container{
+				width: 500px;
+				/* 1 */
+				/* height: 500px; */
+				background-color: black;
+				/* 3 */
+				/* overflow: hidden;
+				clear: both; */
+			}
 			
+			/* 4 */
+			.container::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			
+			.box{
+				width: 100px;
+				height: 100px;
+				background-color: green;
+				margin: 10px;
+				float: left;
+			}
+			
+			.text{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				/* 2 */
+				clear: both;
+			}
+			
+			.text1{
+				width: 100px;
+				height: 100px;
+				background-color: blue;
+				/* 2 */
+				/* clear: both; */
+			}
 		</style>
 	</head>
 	<body>
+		<h3>1.父元素设置高度<br />
+		2.受影响的元素增加clear属性<br />
+		3.overflow清除浮动<br />
+		4.伪对象方式</h3>
 		
+		<div class="container">
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="text"></div>
+		</div>
+		<div class="text1"></div>
 	</body>
 </html>
